@@ -1,4 +1,4 @@
-const CACHE='word-quest-v2';
+const CACHE='word-quest-v3';
 const FILES=['./','./index.html','./style.css','./app.js','./pokemon.js','./pokemon-data.js','./icon.svg','./manifest.webmanifest'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)));self.skipWaiting()});
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('word-quest-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
