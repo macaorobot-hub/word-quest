@@ -13,3 +13,11 @@
 ## 開發
 
 純 HTML/CSS/JavaScript，無外部相依套件。用任何靜態網頁伺服器開啟。GitHub Pages 從 main 根目錄發佈。
+
+## 寶可夢拼字挑戰
+
+每輪從 29 個重點生字隨機抽取 5 個不重複詞語。全部拼對後，隨機解鎖一隻尚未收藏的首代寶可夢（共 151 隻）。答錯可重試、可用音節提示；中途離開不會獲得獎勵。圖鑑可重看圖片、繁體中文及英文名稱、分類、屬性、身高體重、特性、首代進化關係和六項種族值。
+
+收藏以 `word-quest-pokemon-v1` 儲存在同一瀏覽器；正常使用不重複解鎖，收齊後不再發獎。支援 Web Locks 的瀏覽器亦會序列化不同分頁的解鎖。收藏不跨裝置同步，清除網站資料會清除收藏。資料無法儲存時會提示，不會默默發出不能保存的獎勵。
+
+寶可夢資料：PokéAPI 的 https://github.com/PokeAPI/pokeapi/tree/master/data/v2/csv （2026-11-27 取得）。圖片：https://github.com/PokeAPI/sprites/tree/master/sprites/pokemon/other/official-artwork 。圖片在本網站提供，瀏覽過的圖片可離線快取；未瀏覽的圖片仍需網絡。寶可夢角色及圖像屬其各自權利人所有，此為非官方學習作品。沒有把收藏或學習紀錄傳送到 PokéAPI。
